@@ -8,9 +8,7 @@ for x in lines:
     id+=1
     temp = x.split()
     temp.pop(0)
-    reds=0
-    blues=0
-    greens=0
+    reds,blues,greens=0,0,0
     valid=True
     for y in range(0,len(temp),2):
         if (temp[y+1][:-1]) == "green" or (temp[y+1]) == "green":
